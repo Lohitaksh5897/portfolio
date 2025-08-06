@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h1 class="gradient-text">Gorripothu Lohitaksh</h1>
+            <div class="typing-container">
+                <span id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="profile-image-container">
+                <img src="D:\Pictures\Camera\WhatsApp Image 2025-07-16 at 20.53.41_2ec269b2.jpg" alt="Profile picture of Alex" class="profile-image">
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-intro" class="fade-in"></p>
+                </div>
+                <div class="quote-container">
+                    <p id="rotating-quote"></p>
+                </div>
+                <a href="resume.pdf" class="download-btn" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="skills-heading">Skills I'm Learning</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-css3-plain colored"></i>
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-python-plain colored"></i>
+                <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-git-plain colored"></i>
+                <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-react-original colored"></i>
+                <span class="skill-name">React</span>
+            </div>
+        </div>
+        <div class="skills-ticker-container">
+            <div class="skills-ticker">
+                <span>Currently Learning: HTML • CSS • JavaScript • Python • Git • React &nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
