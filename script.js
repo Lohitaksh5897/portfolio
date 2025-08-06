@@ -68,10 +68,28 @@ class QuoteRotator {
     }
 }
 
+// Scroll-based animations for skill cards
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            entry.target.style.setProperty('--delay', entry.target.dataset.delay);
+        }
+    });
+}, observerOptions);
+
 // Init on DOM Load
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+    // Initialize scroll animations for skill cards
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach(card => observer.observe(card));
     // Initialize header typing effect
     const element = document.getElementById('typing-text');
     const words = [
